@@ -8,7 +8,7 @@ namespace ambovent
     class Percent
     {
       public:
-        explicit Percent(float value = 0);
+        explicit Percent(float value);
         
         operator float() const;
         Percent operator+(const Percent& other) const;
