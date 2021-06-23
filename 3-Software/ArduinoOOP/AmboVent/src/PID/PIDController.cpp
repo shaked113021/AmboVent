@@ -2,7 +2,7 @@
 
 using PID::PIDController;
 
-PIDController::PIDController(const float kP, const float kI, const float kD, const float integral_limit = kDefaultLimit) : m_kP(kP), m_kI(kI), m_kD(kD), m_integral_limit(integral_limit)
+PIDController::PIDController(const float kP, const float kI, const float kD, const float integral_limit) : m_kP(kP), m_kI(kI), m_kD(kD), m_integral_limit(integral_limit)
 {
   this->m_minimum_integral_cycles = 0;
   this->Reset();

@@ -24,7 +24,7 @@ namespace PID
       void Reset();
       float Calculate(const float proccess_variable);
 
-      static const float kDefaultLimit = -1.0f;
+      static constexpr float kDefaultLimit = -1.0f;
     private:
       float m_kP;
       float m_kI;
